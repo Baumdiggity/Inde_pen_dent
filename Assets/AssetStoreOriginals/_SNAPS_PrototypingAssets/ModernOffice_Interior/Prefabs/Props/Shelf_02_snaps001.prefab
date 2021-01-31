@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 208454655661277526}
   m_Layer: 0
   m_Name: Shelf_02_snaps001
-  m_TagString: Untagged
+  m_TagString: Climbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8

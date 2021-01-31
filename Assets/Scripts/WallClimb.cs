@@ -42,12 +42,12 @@ public class WallClimb : MonoBehaviour
 
     bool isGrounded()
     {
-        return Physics.Raycast(new Vector3(transform.position.x,transform.position.y + distToGround,transform.position.z), -Vector3.up, distToGround + 0.1f);
+        return Physics.BoxCast(new Vector3(transform.position.x, transform.position.y + distToGround, transform.position.z),
+            new Vector3(_col.bounds.extents.x/2, distToGround*1.5f, _col.bounds.extents.z/2), - Vector3.up, transform.rotation ,distToGround*3.0f);
     }
-
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.gameObject.tag);
+        
 
         if (wallClimb && other.gameObject.CompareTag("Climbable"))
         { 
@@ -58,7 +58,11 @@ public class WallClimb : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         if (wallClimb && other.gameObject.CompareTag("Climbable"))
-        {
+        { if(Input.GetAxis("Vertical") >0)
+            {
+                Debug.Log(other.gameObject.tag);
+                _body.MovePosition(new Vector3(_body.position.x + 5.0f, _body.position.y + 10.0f, _body.position.z));
+            }
             vertEnabled = false;
         }
     }

@@ -21,7 +21,7 @@ public class PenPlayer : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        movePos = Input.GetAxis("Vertical") * 10;
+        movePos = Input.GetAxis("Vertical") * 20f;
         movePos = (movePos > MaxThrottle) ? MaxThrottle : movePos;
         float roundedLeftThrottle = Mathf.Round(movePos);
         if (Mathf.Abs(roundedLeftThrottle - movePos) < 0.02f)

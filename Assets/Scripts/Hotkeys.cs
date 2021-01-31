@@ -16,7 +16,7 @@ public class Hotkeys : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.R))
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(0);
         }
 
         if(Input.GetKeyDown(KeyCode.Q))

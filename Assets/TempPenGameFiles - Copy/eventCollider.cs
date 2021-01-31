@@ -6,7 +6,7 @@ public class eventCollider : MonoBehaviour
 {
 	private void OnCollisionEnter(Collision collision)
 	{
-		if(collision.gameObject.tag == "TempRising")
+		if(collision.gameObject.tag == "RisingTemp")
 			FindObjectOfType<GameMaster>().TempRising = true;
 
 		if(collision.gameObject.tag == "Gas")

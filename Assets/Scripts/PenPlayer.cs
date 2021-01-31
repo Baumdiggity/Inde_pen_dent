@@ -6,7 +6,7 @@ public class PenPlayer : MonoBehaviour
 {
     public const int MaxThrottle = 10;
     public const float SmoothMovement = 0.5f;
-    public const float SmoothTurning = 2f;
+    public const float SmoothTurning = 5f;
 
     private float movePos = 0f;
     private float moveRot = 0f;
@@ -46,20 +46,20 @@ public class PenPlayer : MonoBehaviour
         }
         else if (roundedRightThrottle > moveRot)
         {
-            moveRot += 0.01f;
+            moveRot += 0.1f;
         }
         else if (roundedRightThrottle < moveRot)
         {
-            moveRot -= 0.01f;
+            moveRot -= 0.1f;
         }
 
         // Move the tank.
-        Vector3 movement = transform.forward * (movePos / 2f) * SmoothMovement * Time.deltaTime;
+        Vector3 movement = transform.right * (movePos / 2f) * SmoothMovement * Time.deltaTime;
         tankRigidbody.MovePosition(tankRigidbody.position + movement);
 
         // Turn the tank.
         float turn = (moveRot) * SmoothTurning * Time.deltaTime;
-        Quaternion turnRotation = Quaternion.Euler(turn, 0f, 0f);
+        Quaternion turnRotation = Quaternion.Euler(0f, turn, 0f);
         tankRigidbody.MoveRotation(tankRigidbody.rotation * turnRotation);
     }
 }

@@ -90,7 +90,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300000, guid: cba4b234440c48f4da95dbd0734b2cf7, type: 2}
 --- !u!1001 &1238142922682361334
@@ -148,12 +148,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6097181604951290441, guid: a5a328fd0bdbc82418c900ec0e290bd4,
+    - target: {fileID: 208713647693951862, guid: a5a328fd0bdbc82418c900ec0e290bd4,
         type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 208713647693951862, guid: a5a328fd0bdbc82418c900ec0e290bd4,
+    - target: {fileID: 6097181604951290441, guid: a5a328fd0bdbc82418c900ec0e290bd4,
         type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -179,6 +179,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3786402053386643545}
     m_Modifications:
+    - target: {fileID: 1479674542863872, guid: 1311ead9e03725440bcd145a4ddd5518, type: 3}
+      propertyPath: m_Name
+      value: ComputerDesk_01_snaps001
+      objectReference: {fileID: 0}
     - target: {fileID: 4037808199842474, guid: 1311ead9e03725440bcd145a4ddd5518, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.1254292
@@ -223,15 +227,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1479674542863872, guid: 1311ead9e03725440bcd145a4ddd5518, type: 3}
-      propertyPath: m_Name
-      value: ComputerDesk_01_snaps001
-      objectReference: {fileID: 0}
-    - target: {fileID: 7735487590094099204, guid: 1311ead9e03725440bcd145a4ddd5518,
-        type: 3}
-      propertyPath: m_Convex
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 208603080304223406, guid: 1311ead9e03725440bcd145a4ddd5518,
         type: 3}
       propertyPath: m_Shape
@@ -245,6 +240,11 @@ PrefabInstance:
     - target: {fileID: 208603080304223406, guid: 1311ead9e03725440bcd145a4ddd5518,
         type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7735487590094099204, guid: 1311ead9e03725440bcd145a4ddd5518,
+        type: 3}
+      propertyPath: m_Convex
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -262,6 +262,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3786402053386643545}
     m_Modifications:
+    - target: {fileID: 1400576004536676, guid: 5bda03e6c90ba284f859d8e2c3a027fc, type: 3}
+      propertyPath: m_Name
+      value: Computer_01_snaps001
+      objectReference: {fileID: 0}
     - target: {fileID: 4407548838867200, guid: 5bda03e6c90ba284f859d8e2c3a027fc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.12542915
@@ -306,9 +310,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1400576004536676, guid: 5bda03e6c90ba284f859d8e2c3a027fc, type: 3}
-      propertyPath: m_Name
-      value: Computer_01_snaps001
+    - target: {fileID: 208358798225605628, guid: 5bda03e6c90ba284f859d8e2c3a027fc,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bda03e6c90ba284f859d8e2c3a027fc, type: 3}
@@ -325,6 +330,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3786402053386643545}
     m_Modifications:
+    - target: {fileID: 1558308838075884, guid: 1ae56147953582b4280b244e7064132d, type: 3}
+      propertyPath: m_Name
+      value: Keyboard_01_snaps001
+      objectReference: {fileID: 0}
     - target: {fileID: 4523669443498136, guid: 1ae56147953582b4280b244e7064132d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.1604156
@@ -369,9 +378,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1558308838075884, guid: 1ae56147953582b4280b244e7064132d, type: 3}
-      propertyPath: m_Name
-      value: Keyboard_01_snaps001
+    - target: {fileID: 208365193073419668, guid: 1ae56147953582b4280b244e7064132d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ae56147953582b4280b244e7064132d, type: 3}
@@ -467,6 +477,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3786402053386643545}
     m_Modifications:
+    - target: {fileID: 1776277804425246, guid: 247e5b33a1b1dba43a82e14ad7191756, type: 3}
+      propertyPath: m_Name
+      value: OfficeChair_01_snaps001
+      objectReference: {fileID: 0}
     - target: {fileID: 4836093174739976, guid: 247e5b33a1b1dba43a82e14ad7191756, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.1254292
@@ -511,10 +525,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1776277804425246, guid: 247e5b33a1b1dba43a82e14ad7191756, type: 3}
-      propertyPath: m_Name
-      value: OfficeChair_01_snaps001
-      objectReference: {fileID: 0}
     - target: {fileID: 2468346583201311227, guid: 247e5b33a1b1dba43a82e14ad7191756,
         type: 3}
       propertyPath: m_Enabled
@@ -546,6 +556,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3786402053386643545}
     m_Modifications:
+    - target: {fileID: 1441441114530490, guid: 8c8b047a2c0cdf442a97847b15e17227, type: 3}
+      propertyPath: m_Name
+      value: CoffeeMug_01_snaps001
+      objectReference: {fileID: 0}
     - target: {fileID: 4757535084014854, guid: 8c8b047a2c0cdf442a97847b15e17227, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.8110008
@@ -589,10 +603,6 @@ PrefabInstance:
     - target: {fileID: 4757535084014854, guid: 8c8b047a2c0cdf442a97847b15e17227, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1441441114530490, guid: 8c8b047a2c0cdf442a97847b15e17227, type: 3}
-      propertyPath: m_Name
-      value: CoffeeMug_01_snaps001
       objectReference: {fileID: 0}
     - target: {fileID: 6155153368432484864, guid: 8c8b047a2c0cdf442a97847b15e17227,
         type: 3}

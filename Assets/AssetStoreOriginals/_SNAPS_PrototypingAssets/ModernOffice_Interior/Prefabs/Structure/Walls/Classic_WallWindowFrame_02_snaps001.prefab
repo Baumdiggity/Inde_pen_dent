@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2175160453246072639}
   m_Layer: 0
   m_Name: Classic_WallWindowFrame_02_snaps001
-  m_TagString: Untagged
+  m_TagString: Climbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8

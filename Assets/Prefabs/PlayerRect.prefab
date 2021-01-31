@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1237962704555938787}
   - component: {fileID: 3944189231486930305}
   - component: {fileID: 3174989394239938121}
+  - component: {fileID: 283502949}
   m_Layer: 0
   m_Name: PlayerRect
   m_TagString: Untagged
@@ -33,6 +34,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3257380565596801938}
+  - {fileID: 2891229800494844557}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -72,7 +74,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 64
+  m_Constraints: 0
   m_CollisionDetection: 2
 --- !u!114 &3944189231486930305
 MonoBehaviour:
@@ -99,6 +101,78 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.06, y: 0.06, z: 0.63}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &283502949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237962704555938785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7128bf0209547c4ba757a116fc0f23c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &3149957331309801569
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2891229800494844557}
+  - component: {fileID: 7492464792646509683}
+  - component: {fileID: 8743632380696250783}
+  m_Layer: 0
+  m_Name: WallClimb
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2891229800494844557
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3149957331309801569}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.085, y: 0.0314, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1237962704555938788}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &7492464792646509683
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3149957331309801569}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.02, y: 0.04, z: 0.43}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8743632380696250783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3149957331309801569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7a804f9c3a212e4aaf6895c62ab68b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wallClimb: 1
+  vertEnabled: 0
+  horMove: {fileID: 3944189231486930305}
 --- !u!1 &7066092372461317265
 GameObject:
   m_ObjectHideFlags: 0
@@ -193,7 +267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   body: {fileID: 1237962704555938787}
-  currentRotation: 0
+  currentRotation: {x: 0, y: 0, z: 0}
 --- !u!1 &7842501441854945109
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,7 +278,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3257380565596801938}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
